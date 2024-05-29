@@ -1,0 +1,8 @@
+{
+  "components": {
+    "Form": {
+      "itemMarginBottom": 12,
+      "verticalLabelPadding": 0
+    }
+  }
+}
