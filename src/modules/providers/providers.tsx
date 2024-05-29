@@ -1,11 +1,16 @@
-import { FC, PropsWithChildren } from 'react';
+import { FC } from 'react';
+
+import { Provider } from '@/modules/routes';
+
 import { StoreProviders } from './store-provider';
 import { ConfigTheme } from './config-theme-provider';
 
-export const Providers: FC<PropsWithChildren> = ({ children }) => {
+export const Providers: FC = () => {
   return (
     <StoreProviders>
-      <ConfigTheme>{children}</ConfigTheme>
+      <ConfigTheme>
+        <Provider />
+      </ConfigTheme>
     </StoreProviders>
   );
 };

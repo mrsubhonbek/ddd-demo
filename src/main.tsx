@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import { Provider } from './modules/route'
+import { Providers } from './modules/providers'
 
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Provider />
+    <Providers />
   </React.StrictMode>,
 )
